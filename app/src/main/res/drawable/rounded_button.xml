@@ -1,14 +1,16 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Created by Sujoy Datta. Copyright (c) 2018. All rights reserved.
   ~
   ~ To the person who is reading this..
   ~ When you finally understand how this works, please do explain it to me too at sujoydatta26@gmail.com
   ~ P.S.: In case you are planning to use this without mentioning me, you will be met with mean judgemental looks and sarcastic comments.
   -->
-
-<resources>
-    <string name="app_name">GeekSpace</string>
-    <string name="default_username">Username</string>
-    <string name="default_email">Email</string>
-    <string name="sharedPref_file_name">geekPreferences</string>
-</resources>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#09bdd9" />
+    <corners
+        android:bottomLeftRadius="80dp"
+        android:bottomRightRadius="80dp"
+        android:topLeftRadius="80dp"
+        android:topRightRadius="80dp" />
+</shape>
