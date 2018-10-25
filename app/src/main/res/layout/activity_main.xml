@@ -19,13 +19,6 @@
         android:layout_height="wrap_content"
         android:background="@color/white">
 
-        <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="@string/dashboard"-->
-        <!--android:gravity="center"-->
-        <!--android:textSize="18sp"-->
-        <!--android:textColor="@android:color/black"/>-->
     </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
@@ -63,8 +56,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
                 android:text="hr"
                 android:textColor="@color/text_color"
                 android:textSize="18sp" />

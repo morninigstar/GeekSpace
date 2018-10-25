@@ -15,18 +15,26 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
 
+import com.dd.processbutton.iml.ActionProcessButton;
 import com.morningstar.geekspace.Managers.ConstantsManager;
 import com.morningstar.geekspace.R;
 
 import androidx.appcompat.app.AppCompatActivity;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button button_signUp;
-    private EditText editText_userName, editText_email, editText_phone;
+    @BindView(R.id.btn_SignUp)
+    ActionProcessButton button_signUp;
+    @BindView(R.id.editText_username)
+    EditText editText_userName;
+    @BindView(R.id.editText_email)
+    EditText editText_email;
+    @BindView(R.id.editText_phone)
+    EditText editText_phone;
 
     private String username, useremail;
     private long usermobile;
@@ -38,15 +46,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        ButterKnife.bind(this);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        button_signUp = findViewById(R.id.btn_SignUp);
-
-        editText_userName = findViewById(R.id.editText_username);
-        editText_email = findViewById(R.id.editText_email);
-        editText_phone = findViewById(R.id.editText_phone);
-
+        button_signUp.setMode(ActionProcessButton.Mode.ENDLESS);
         button_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

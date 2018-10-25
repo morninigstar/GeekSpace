@@ -6,10 +6,10 @@
   ~ P.S.: In case you are planning to use this without mentioning me, you will be met with mean judgemental looks and sarcastic comments.
   -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/login_screen_bg"
     android:orientation="vertical">
 
@@ -105,25 +105,23 @@
 
     </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="50dp"
-        app:cardBackgroundColor="@color/loginButtonBackground"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="10dp">
 
-        <Button
-            android:id="@+id/btn_SignUp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/rounded_button"
-            android:text="Sign Up"
-            android:textAlignment="center"
-            android:textSize="16dp"
-            android:textStyle="italic"
-            tools:ignore="SpUsage" />
-    </androidx.cardview.widget.CardView>
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/btn_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        custom:pb_colorComplete="@color/green_complete"
+        custom:pb_colorError="@color/red_error"
+        custom:pb_colorNormal="@color/blue_normal"
+        custom:pb_colorPressed="@color/blue_pressed"
+        custom:pb_colorProgress="@color/purple_progress"
+        custom:pb_textComplete="Success"
+        custom:pb_textError="Error"
+        custom:pb_textProgress="Please Wait.." />
 </LinearLayout>
