@@ -13,4 +13,6 @@
 
     <color name="loginButtonBackground">#09bdd9</color>
     <color name="toolbarColor">#1BA5BB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_color">#a45d88</color>
 </resources>
