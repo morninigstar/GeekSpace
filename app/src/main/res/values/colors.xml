@@ -7,12 +7,10 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#09BDD9</color>
-    <color name="colorPrimaryDark">#01859A</color>
+    <color name="colorPrimary">#343041</color>
+    <color name="colorPrimaryDark">#1d1d22</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="secondaryColor">#FFFFFF</color>
 
     <color name="loginButtonBackground">#09bdd9</color>
-    <color name="toolbarColor">#1BA5BB</color>
-    <color name="white">#FFFFFF</color>
-    <color name="text_color">#26c1Fa</color>
 </resources>

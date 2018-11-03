@@ -18,7 +18,7 @@ package com.morningstar.geekspace.Managers;
  */
 
 public class ConstantsManager {
-    public static final String shared_pref_username = "username";
-    public static final String shared_pref_email = "email";
-    public static final String shared_pref_mobile = "mobile";
+    public static final String SHARED_PREF_USERNAME = "username";
+    public static final String SHARED_PREF_EMAIL = "email";
+    public static final String SHARED_PREF_MOBILE = "mobile";
 }

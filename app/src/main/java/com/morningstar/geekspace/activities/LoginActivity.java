@@ -65,9 +65,9 @@ public class LoginActivity extends AppCompatActivity {
                     useremail = editText_email.getText().toString().trim();
                     usermobile = Long.parseLong(editText_phone.getText().toString());
 
-                    editor.putString(ConstantsManager.shared_pref_username, username);
-                    editor.putString(ConstantsManager.shared_pref_email, useremail);
-                    editor.putLong(ConstantsManager.shared_pref_mobile, usermobile);
+                    editor.putString(ConstantsManager.SHARED_PREF_USERNAME, username);
+                    editor.putString(ConstantsManager.SHARED_PREF_EMAIL, useremail);
+                    editor.putLong(ConstantsManager.SHARED_PREF_MOBILE, usermobile);
                     editor.apply();
 
 //                    ProfileModel profileModel = new ProfileModel();

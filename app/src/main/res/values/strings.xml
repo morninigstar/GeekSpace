@@ -11,7 +11,6 @@
     <string name="default_username">Username</string>
     <string name="default_email">Email</string>
     <string name="sharedPref_file_name">geekPreferences</string>
-    <string name="time_wasted_today">Time wasted today</string>
     <string name="default_value_zero">00</string>
     <string name="dashboard">Dashboard</string>
 </resources>

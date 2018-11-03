@@ -60,7 +60,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private boolean hasProfile() {
         SharedPreferences sharedPreferences = getSharedPreferences(String.valueOf(R.string.sharedPref_file_name), Context.MODE_PRIVATE);
-        String username = sharedPreferences.getString(ConstantsManager.shared_pref_email, null);
+        String username = sharedPreferences.getString(ConstantsManager.SHARED_PREF_EMAIL, null);
         return username != null;
     }
 
