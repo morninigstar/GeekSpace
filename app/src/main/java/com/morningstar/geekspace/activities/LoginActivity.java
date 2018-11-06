@@ -75,10 +75,12 @@ public class LoginActivity extends AppCompatActivity {
 //                    profileModel.setUserEmail(useremail);
 //                    profileModel.setMob(usermobile);
 
+                    button_signUp.setProgress(100);
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
+                    button_signUp.setProgress(-1);
                     editText_userName.setError("All fields are required");
                 }
             }
